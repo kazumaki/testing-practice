@@ -14,7 +14,7 @@ test('Subtract 4 - 2 should be equal to 2', () => {
 
 test('Subtract 2 - 2 should not be equal to 2', () => {
   expect(calculator.subtract(2, 2)).not.toBe(2);
-})
+});
 
 test('Divide 4 / 2 should be equal to 2', () => {
   expect(calculator.divide(4, 2)).toBe(2);

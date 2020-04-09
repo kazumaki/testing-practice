@@ -6,6 +6,6 @@ const reverseString = (string) => {
   }
 
   return newStringArray.join('');
-}
+};
 
 export default reverseString;

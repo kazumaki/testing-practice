@@ -8,8 +8,8 @@ const calculator = (() => {
     add,
     subtract,
     divide,
-    multiply
-  }
+    multiply,
+  };
 })();
 
 export default calculator;
