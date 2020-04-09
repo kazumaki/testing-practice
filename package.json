@@ -1,24 +1,11 @@
 {
-  "name": "testing-practice",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-jest": "^25.3.0",
+    "jest": "^25.3.0"
+  },
   "scripts": {
     "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kazumaki/testing-practice.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kazumaki/testing-practice/issues"
-  },
-  "homepage": "https://github.com/kazumaki/testing-practice#readme",
-  "devDependencies": {
-    "@babel/preset-env": "^7.9.5",
-    "jest": "^25.3.0"
   }
 }
