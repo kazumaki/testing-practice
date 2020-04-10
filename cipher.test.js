@@ -4,7 +4,7 @@ test('cipher.encryptString("abcdefghijklmnopqrstuvwxyz") should be "cdefghijklmn
   expect(cipher.encryptString('abcdefghijklmnopqrstuvwxyz')).toBe('cdefghijklmnopqrstuvwxyzab');
 });
 
-test('cipher.encryptString("abcdefghijklmnopqrstuvwxyz") should be "CDEFGHIJKLMNOPQRSTUVWXYZAB"', () => {
+test('cipher.encryptString("abcdefghijklmnopqrstuvwxyz") should not be "CDEFGHIJKLMNOPQRSTUVWXYZAB"', () => {
   expect(cipher.encryptString('abcdefghijklmnopqrstuvwxyz')).not.toBe('CDEFGHIJKLMNOPQRSTUVWXYZAB');
 });
 
@@ -18,4 +18,12 @@ test('cipher.decryptString("cdefghijklmnopqrstuvwxyzab") should be "abcdefghijkl
 
 test('cipher.decryptString"cdefghijk.lmnopqrstuvwxyzab") should be "abcdefghi.jklmnopqrstuvwxyz"', () => {
   expect(cipher.decryptString('cdefghijk.lmnopqrstuvwxyzab')).toBe('abcdefghi.jklmnopqrstuvwxyz');
+});
+
+test('cipher.encryptString("abcDEFghiJKLmnopqrsTUVWXYZ") should be "cdeFGHijkLMNopqrstuVWXYZAB"', () => {
+  expect(cipher.encryptString('abcDEFghiJKLmnopqrsTUVWXYZ')).toBe('cdeFGHijkLMNopqrstuVWXYZAB');
+});
+
+test('cipher.decryptString"cdeFGHijkLMNopqrstuVWXYZAB") should be "abcDEFghiJKLmnopqrsTUVWXYZ"', () => {
+  expect(cipher.decryptString('cdeFGHijkLMNopqrstuVWXYZAB')).toBe('abcDEFghiJKLmnopqrsTUVWXYZ');
 });
