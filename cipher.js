@@ -14,7 +14,7 @@ const cipher = (() => {
 
       if (encrypt) {
         newKeyCode = char.charCodeAt(0) + (offset % 26);
-        
+
         if (char.toUpperCase() === char) {
           newKeyCode = newKeyCode > 'Z'.charCodeAt(0) ? 'A'.charCodeAt(0) + newKeyCode - 'Z'.charCodeAt(0) - 1 : newKeyCode;
         } else {
@@ -22,7 +22,7 @@ const cipher = (() => {
         }
       } else {
         newKeyCode = char.charCodeAt(0) - (offset % 26);
-        
+
         if (char.toUpperCase() === char) {
           newKeyCode = newKeyCode < 'A'.charCodeAt(0) ? 'Z'.charCodeAt(0) - ('A'.charCodeAt(0) - newKeyCode) + 1 : newKeyCode;
         } else {
